@@ -1,0 +1,10 @@
+<% @ps.each do |p| %>
+    <div>
+       <%= link_to p.title,product_path(p) %>
+      <!--<%= p.title %>-->
+      <%= p.description %>
+      $<%= p.price.round(3) %>
+    </div>
+
+
+<% end %>

@@ -1,0 +1,20 @@
+<h2>contact</h2>
+<%= form_tag("/contact_submit") do %>
+    <div>
+      <%= label_tag 'name' %>
+      <%= text_field_tag 'name' %>
+    </div>
+    <div>
+      <%= label_tag 'email' %>
+      <%= email_field_tag 'email' %>
+    </div>
+    <div>
+      <%= label_tag 'message' %>
+      <%= text_area_tag 'message' %>
+    </div>
+
+
+    <%= submit_tag "Submit"%>
+
+
+<% end %>

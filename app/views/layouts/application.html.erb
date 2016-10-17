@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Amazon</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+<%= link_to "home",home_path  %>
+<%= link_to "about",about_path  %>
+<%= link_to "contact",contact_path  %>
+<%= link_to "New Product", new_product_path %>
+<%= link_to "Listing",products_path %>
+
+    <%= yield %>
+  </body>
+</html>

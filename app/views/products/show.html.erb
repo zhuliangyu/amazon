@@ -1,0 +1,11 @@
+<br>
+<div>
+  <h1><%= @p.title %></h1>
+  <%= @p.description %>
+  <%= @p.price %>
+
+  <%= link_to "Delete",product_path(@p),method: :delete %>
+  <%= link_to "Edit",edit_product_path(@p) %>
+
+
+</div>
