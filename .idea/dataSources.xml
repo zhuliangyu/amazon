@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="Rails amazon: test" uuid="00c8a309-e8e5-4057-bd4a-a733ad15b545">
+    <data-source source="LOCAL" name="Rails amazon: test" uuid="2404f1bc-4a36-4cd5-ac1c-a5ab54853e27">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <imported>true</imported>
@@ -17,13 +17,13 @@
         </library>
       </libraries>
     </data-source>
-    <data-source source="LOCAL" name="Rails amazon: production" uuid="108e9e2a-f00a-47ab-ab18-652dd697d13b">
+    <data-source source="LOCAL" name="Rails amazon: development" uuid="83ac842d-9927-4910-98d9-42a82a3161d2">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <imported>true</imported>
       <remarks>$PROJECT_DIR$/config/database.yml</remarks>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql:amazon_production</jdbc-url>
+      <jdbc-url>jdbc:postgresql:amazon_development</jdbc-url>
       <libraries>
         <library>
           <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/postgresql-driver-license.txt</url>
@@ -33,13 +33,13 @@
         </library>
       </libraries>
     </data-source>
-    <data-source source="LOCAL" name="Rails amazon: development" uuid="9ccdc12b-e54b-428b-a3d3-6f06a4640e1a">
+    <data-source source="LOCAL" name="Rails amazon: production" uuid="f399eb2a-9503-4197-a2fa-89acd83e3129">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <imported>true</imported>
       <remarks>$PROJECT_DIR$/config/database.yml</remarks>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql:amazon_development</jdbc-url>
+      <jdbc-url>jdbc:postgresql:amazon_production</jdbc-url>
       <libraries>
         <library>
           <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/postgresql-driver-license.txt</url>

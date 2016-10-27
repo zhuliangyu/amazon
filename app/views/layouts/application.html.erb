@@ -1,20 +1,40 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Amazon</title>
-    <%= csrf_meta_tags %>
+<head>
+  <title>Amazon</title>
+  <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
 
-  <body>
-<%= link_to "home",home_path  %>
-<%= link_to "about",about_path  %>
-<%= link_to "contact",contact_path  %>
+<body>
+<% if flash[:notice] %>
+    <div>
+      <%= flash[:notice] %>
+    </div>
+<% end %>
+<% if flash[:alert] %>
+    <div>
+      <%= flash[:alert] %>
+    </div>
+<% end %>
+<% if session[:user_id] %>
+    <div>
+      Hi,<%=User.find(session[:user_id]).first_name %>
+    </div>
+<% end %>
+
+
+<%= link_to "home", home_path %>
+<%= link_to "about", about_path %>
+<%= link_to "contact", contact_path %>
 <%= link_to "New Product", new_product_path %>
-<%= link_to "Listing",products_path %>
+<%= link_to "Listing", products_path %>
+<%= link_to "Sign in", new_user_path %>
+<%= link_to "Log in", new_session_path %>
+<%= link_to "Log out", sessions_path, method: :delete %>
 
-    <%= yield %>
-  </body>
+<%= yield %>
+</body>
 </html>

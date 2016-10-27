@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="Rails amazon: test" uuid="00c8a309-e8e5-4057-bd4a-a733ad15b545">
+    <data-source name="Rails amazon: test" uuid="2404f1bc-4a36-4cd5-ac1c-a5ab54853e27">
       <database-info product="PostgreSQL" version="9.5.4" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
     </data-source>
-    <data-source name="Rails amazon: production" uuid="108e9e2a-f00a-47ab-ab18-652dd697d13b">
+    <data-source name="Rails amazon: development" uuid="83ac842d-9927-4910-98d9-42a82a3161d2">
+      <database-info product="PostgreSQL" version="9.5.4" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <introspection-scope>amazon_development:pg_catalog,public</introspection-scope>
+      <resolve-scope>amazon_development:public</resolve-scope>
+    </data-source>
+    <data-source name="Rails amazon: production" uuid="f399eb2a-9503-4197-a2fa-89acd83e3129">
       <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
       <user-name>macbook</user-name>
       <user-password>df96df8fdf97df8adfefdfe4dffcdff1df8ddfebdfe7dfebdff0dfe5dfe4dff5dfeedfebdffedfebdfe8dfebdff9dfefdff5dffadfebdff9dff9dffddfe5dff8dfeedf8ddff7df8adf8fdf94</user-password>
-    </data-source>
-    <data-source name="Rails amazon: development" uuid="9ccdc12b-e54b-428b-a3d3-6f06a4640e1a">
-      <database-info product="PostgreSQL" version="9.5.4" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)">
-        <identifier-quote-string>&quot;</identifier-quote-string>
-      </database-info>
-      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
-      <user-name>macbook</user-name>
-      <introspection-scope>amazon_development:macbook,pg_catalog,public</introspection-scope>
-      <resolve-scope>amazon_development:macbook,public</resolve-scope>
     </data-source>
   </component>
 </project>

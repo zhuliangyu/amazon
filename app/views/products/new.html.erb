@@ -1,4 +1,4 @@
-<%= form_for @p  do |f|%>
+<%= form_for @p do |f| %>
     <div>
       <%= f.label :title %>
       <%= f.text_field :title %>
@@ -14,8 +14,48 @@
       <%= f.text_field :price %>
 
     </div>
+
+    <div>
+      <%= f.collection_select(:category_id, Category.all, :id, :name) %>
+
+
+    </div>
     <%= f.submit %>
 
 
 
 <% end %>
+
+<% if false %>
+
+    <%= form_tag products_path do %>
+
+        <%= check_box_tag(:pets, "dog") %>I own a dog
+        <%= check_box_tag(:pets, "cat") %>I own a cat
+        <%= submit_tag %>
+
+    <% end %>
+
+
+    <%= form_tag products_path do %>
+
+
+        <%= radio_button_tag(:pets, "dog") %>I own a dog
+        <%= radio_button_tag(:pets, "cat") %>I own a cat
+        <%= submit_tag %>
+
+    <% end %>
+
+
+    <%= form_tag products_path do %>
+
+
+        <%= select_tag "pet", raw("<option value='David'>David</option> <option value='John'>John</option>") %>
+
+        <%= submit_tag %>
+
+    <% end %>
+
+<% end %>
+
+

@@ -1,11 +1,52 @@
 <br>
+<%= @review.errors.full_messages.join(",") %>
+<br>
 <div>
   <h1><%= @p.title %></h1>
   <%= @p.description %>
   <%= @p.price %>
+  <%= @p.category.name %>
+  <%= link_to "Delete", product_path(@p), method: :delete %>
+  <%= link_to "Edit", edit_product_path(@p) %>
 
-  <%= link_to "Delete",product_path(@p),method: :delete %>
-  <%= link_to "Edit",edit_product_path(@p) %>
+  <%= @p.favourites.count %> favours
+
+  <% if user_sign_in? && @p.favour_by?(current_user) %>
+      <% @user=current_user %>
+      <% @favour= @user.favourites.find_by(product: @p) %>
+      <%= link_to "unFavourite", favourite_path(@favour), method: :delete %>
+  <% else %>
+      <%= link_to "Favourite", product_favourites_path(@p), method: :post %>
+
+  <% end %>
+
+
+
+  <br>
 
 
 </div>
+
+
+<h2>Reviews</h2>
+<%= form_for [@p, @review] do |f| %>
+    <div>
+      <%= f.label :body %>
+      <%= f.text_area :body %>
+    </div>
+    <div>
+      <%= f.label :star_count %>
+      <%= f.text_area :star_count %>
+    </div>
+    <%= f.submit %>
+<% end %>
+
+<% @p.reviews.each do |review| %>
+    <p>User's first name: <%= review.user.first_name %></p>
+    <p>User's comment: <%= review.body %></p>
+    <p><%= review.star_count %></p>
+
+    <%= link_to "Delete", review_path(review), method: :delete %>
+    <hr>
+<% end %>
+
