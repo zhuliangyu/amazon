@@ -5,5 +5,7 @@ class Review < ApplicationRecord
   validates :star_count, numericality: {less_than_or_equal_to: 5}
 
   belongs_to :user
+  has_many :likes
+  has_many :users,through: :likes
 
 end

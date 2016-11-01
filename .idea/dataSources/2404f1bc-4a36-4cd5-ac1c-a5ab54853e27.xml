@@ -70,56 +70,56 @@
     <database id="23" name="support_requests_test">
       <object-id>32962</object-id>
     </database>
-    <database id="24" name="Blog_development">
-      <object-id>44205</object-id>
-    </database>
-    <database id="25" name="Blog_test">
-      <object-id>44206</object-id>
-    </database>
-    <database id="26" name="fundsy_development_sep_2016">
+    <database id="24" name="fundsy_development_sep_2016">
       <object-id>44433</object-id>
     </database>
-    <database id="27" name="fundsy_test_sep_2016">
+    <database id="25" name="fundsy_test_sep_2016">
       <object-id>44434</object-id>
     </database>
-    <database id="28" name="amazon_test">
+    <database id="26" name="amazon_test">
       <object-id>44568</object-id>
       <visible>1</visible>
     </database>
-    <database id="29" name="amazon_development">
+    <database id="27" name="amazon_development">
       <object-id>44567</object-id>
     </database>
-    <database id="30" name="Code_Snippets_development">
+    <database id="28" name="Code_Snippets_development">
       <object-id>44813</object-id>
     </database>
-    <database id="31" name="Code_Snippets_test">
+    <database id="29" name="Code_Snippets_test">
       <object-id>44814</object-id>
     </database>
-    <database id="32" name="awesome_answers_development_sep_2016">
+    <database id="30" name="awesome_answers_development_sep_2016">
       <object-id>44939</object-id>
     </database>
-    <database id="33" name="awesome_answers_test">
+    <database id="31" name="awesome_answers_test">
       <object-id>44940</object-id>
     </database>
-    <schema id="34" parent="28" name="public">
+    <database id="32" name="Blog_development">
+      <object-id>45164</object-id>
+    </database>
+    <database id="33" name="Blog_test">
+      <object-id>45165</object-id>
+    </database>
+    <schema id="34" parent="26" name="public">
       <object-id>2200</object-id>
       <visible>1</visible>
       <introspection-state-number>21934</introspection-state-number>
       <introspection-timestamp>2016-10-26.18:12:15.492</introspection-timestamp>
     </schema>
-    <schema id="35" parent="28" name="pg_catalog">
+    <schema id="35" parent="26" name="pg_catalog">
       <object-id>11</object-id>
     </schema>
-    <schema id="36" parent="28" name="pg_toast">
+    <schema id="36" parent="26" name="pg_toast">
       <object-id>99</object-id>
     </schema>
-    <schema id="37" parent="28" name="pg_temp_1">
+    <schema id="37" parent="26" name="pg_temp_1">
       <object-id>11816</object-id>
     </schema>
-    <schema id="38" parent="28" name="pg_toast_temp_1">
+    <schema id="38" parent="26" name="pg_toast_temp_1">
       <object-id>11817</object-id>
     </schema>
-    <schema id="39" parent="28" name="information_schema">
+    <schema id="39" parent="26" name="information_schema">
       <object-id>12349</object-id>
     </schema>
     <sequence id="40" parent="34" name="categories_id_seq">

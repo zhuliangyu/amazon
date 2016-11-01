@@ -21,7 +21,7 @@
 <% end %>
 <% if session[:user_id] %>
     <div>
-      Hi,<%=User.find(session[:user_id]).first_name %>
+      Hi,<%= User.find(session[:user_id]).first_name %>
     </div>
 <% end %>
 
@@ -31,9 +31,18 @@
 <%= link_to "contact", contact_path %>
 <%= link_to "New Product", new_product_path %>
 <%= link_to "Listing", products_path %>
-<%= link_to "Sign in", new_user_path %>
-<%= link_to "Log in", new_session_path %>
-<%= link_to "Log out", sessions_path, method: :delete %>
+
+<% if user_sign_in? %>
+    <%= link_to "Log out", sessions_path, method: :delete %>
+<% else %>
+    <%= link_to "Log in", new_session_path %>
+    <%= link_to "Sign up a new user", new_user_path %>
+
+
+
+<% end %>
+
+
 
 <%= yield %>
 </body>

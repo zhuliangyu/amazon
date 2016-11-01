@@ -4,6 +4,8 @@ class User < ApplicationRecord
   has_many :favourites,dependent: :destroy
 
   has_many :products,through: :favourites
+  has_many :likes
+  has_many :reviews,through: :likes
 
 
 

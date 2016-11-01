@@ -1,10 +1,14 @@
 class FavouritesController < ApplicationController
+
+
+
   def create
     favour = Favourite.new
     product = Product.find params[:product_id]
     favour.product = product
     favour.user = current_user
-    if favour.save
+    # binding.pry
+    if can?(:favour,product,current_user) &&favour.save
       redirect_to product_path(product), notice: "Thanks for liking!"
     else
       redirect_to product_path(product), alert: "Can't like! Liked already?"
@@ -13,12 +17,13 @@ class FavouritesController < ApplicationController
 
 
   def destroy
-    favour=current_user.favourites.find(params[:id])
-    @product=favour.product
+    #id is product_id passed from erb file
+    @p=Product.find_by(id: params[:id])
+    favour= current_user.favourites.find_by(product: @p)
+    # favour=current_user.favourites.find(params[:id])
 
     favour.destroy
-    redirect_to product_path(@product), notice: "Like remove!"
-
+    redirect_to product_path(@p), notice: "Like remove!"
   end
 
 end

@@ -30,6 +30,9 @@ gem 'interactive_editor'
 gem 'awesome_print'
 gem 'hirb'
 
+gem 'cancancan'
+gem 'pry-rails'
+
 
 gem 'faker'
 
@@ -41,6 +44,7 @@ group :development, :test do
   gem 'byebug'
   gem 'factory_girl_rails'
   gem 'rails-controller-testing'
+  gem 'meta_request'
 end
 
 group :development do

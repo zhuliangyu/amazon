@@ -10,14 +10,15 @@
   <%= link_to "Edit", edit_product_path(@p) %>
 
   <%= @p.favourites.count %> favours
+  <% if user_sign_in? && can?(:favour,@p,current_user) %>
+      <% if @p.favour_by?(current_user) %>
 
-  <% if user_sign_in? && @p.favour_by?(current_user) %>
-      <% @user=current_user %>
-      <% @favour= @user.favourites.find_by(product: @p) %>
-      <%= link_to "unFavourite", favourite_path(@favour), method: :delete %>
-  <% else %>
-      <%= link_to "Favourite", product_favourites_path(@p), method: :post %>
 
+          <%= link_to "unFavourite", favourite_path(@p), method: :delete %>
+      <% else %>
+          <%= link_to "Favourite", product_favourites_path(@p), method: :post %>
+
+      <% end %>
   <% end %>
 
 

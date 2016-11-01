@@ -6,7 +6,9 @@ Rails.application.routes.draw do
   end
 
   resources :products, shallow: true do
-    resources :favourites, only: [:create, :destroy]
+    # resources :products do
+
+      resources :favourites, only: [:create, :destroy]
     resources :reviews
   end
 

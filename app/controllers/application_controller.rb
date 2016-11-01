@@ -1,5 +1,6 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
+  include CanCan::ControllerAdditions
 
   def current_user
      @user ||=User.find(session[:user_id]) if user_sign_in?
