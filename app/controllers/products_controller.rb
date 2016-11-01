@@ -11,7 +11,7 @@ class ProductsController < ApplicationController
 
     user=current_user
 
-    product_param=params.require(:product).permit(:title, :description, :price, :category_id)
+    product_param=get_params
     @p=Product.new(product_param)
     @p.user =user
     if @p.save
@@ -48,10 +48,19 @@ class ProductsController < ApplicationController
   end
 
   def update
-    product_param=params.require(:product).permit(:title, :description, :price, :category_id)
+    # product_param=params.require(:product).permit(:title, :description, :price, :category_id,tag_ids: [])
+    product_param=get_params
+
+
     @p=Product.find(params[:id])
     @p.update(product_param)
     redirect_to product_path(@p)
 
   end
+
+  private
+  def get_params
+    params.require(:product).permit(:title, :description, :price, :category_id,tag_ids: [])
+  end
+
 end

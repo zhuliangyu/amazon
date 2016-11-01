@@ -20,7 +20,7 @@ class ReviewsController < ApplicationController
     #   end
     #
     @p=Product.find params[:product_id]
-    review_params=params.require(:review).permit(:body,:star_count)
+    review_params=params.require(:review).permit(:body, :star_count)
     @review=Review.new(review_params)
     @review.product=@p
 
@@ -38,10 +38,11 @@ class ReviewsController < ApplicationController
 
   def destroy
     # render json:params
-    @p=Product.find params[:product_id]
+    # @p=Product.find params[:product_id]
     @review=Review.find params[:id]
+    # @p=Product.find(@review.product_id)
     @review.destroy
-    redirect_to product_path(@p)
+    redirect_to product_path(@review.product_id)
 
 
   end

@@ -104,8 +104,8 @@
     <schema id="34" parent="26" name="public">
       <object-id>2200</object-id>
       <visible>1</visible>
-      <introspection-state-number>23057</introspection-state-number>
-      <introspection-timestamp>2016-10-27.23:33:49.837</introspection-timestamp>
+      <introspection-state-number>23311</introspection-state-number>
+      <introspection-timestamp>2016-11-01.14:44:43.746</introspection-timestamp>
     </schema>
     <schema id="35" parent="26" name="pg_catalog">
       <object-id>11</object-id>
@@ -142,425 +142,533 @@
       <object-id>44593</object-id>
       <state-number>21906</state-number>
     </sequence>
-    <sequence id="45" parent="34" name="users_id_seq">
+    <sequence id="45" parent="34" name="taggings_id_seq">
+      <object-id>45345</object-id>
+      <state-number>23311</state-number>
+    </sequence>
+    <sequence id="46" parent="34" name="tags_id_seq">
+      <object-id>45334</object-id>
+      <state-number>23310</state-number>
+    </sequence>
+    <sequence id="47" parent="34" name="users_id_seq">
       <object-id>44606</object-id>
       <state-number>21909</state-number>
     </sequence>
-    <table id="46" parent="34" name="ar_internal_metadata">
+    <table id="48" parent="34" name="ar_internal_metadata">
       <object-id>44645</object-id>
       <state-number>21917</state-number>
     </table>
-    <table id="47" parent="34" name="categories">
+    <table id="49" parent="34" name="categories">
       <object-id>44571</object-id>
       <state-number>21910</state-number>
     </table>
-    <table id="48" parent="34" name="favourites">
+    <table id="50" parent="34" name="favourites">
       <object-id>45125</object-id>
       <state-number>22982</state-number>
     </table>
-    <table id="49" parent="34" name="likes">
+    <table id="51" parent="34" name="likes">
       <object-id>45146</object-id>
       <state-number>23057</state-number>
     </table>
-    <table id="50" parent="34" name="products">
+    <table id="52" parent="34" name="products">
       <object-id>44582</object-id>
-      <state-number>22982</state-number>
+      <state-number>23311</state-number>
     </table>
-    <table id="51" parent="34" name="reviews">
+    <table id="53" parent="34" name="reviews">
       <object-id>44595</object-id>
       <state-number>23057</state-number>
     </table>
-    <table id="52" parent="34" name="schema_migrations">
+    <table id="54" parent="34" name="schema_migrations">
       <object-id>44637</object-id>
       <state-number>21914</state-number>
     </table>
-    <table id="53" parent="34" name="users">
+    <table id="55" parent="34" name="taggings">
+      <object-id>45347</object-id>
+      <state-number>23311</state-number>
+    </table>
+    <table id="56" parent="34" name="tags">
+      <object-id>45336</object-id>
+      <state-number>23311</state-number>
+    </table>
+    <table id="57" parent="34" name="users">
       <object-id>44608</object-id>
       <state-number>23057</state-number>
     </table>
-    <column id="54" parent="46" name="key">
+    <column id="58" parent="48" name="key">
       <state-number>21917</state-number>
       <mandatory>1</mandatory>
       <data-type>varchar|0</data-type>
     </column>
-    <column id="55" parent="46" name="value">
+    <column id="59" parent="48" name="value">
       <state-number>21917</state-number>
       <data-type>varchar|0</data-type>
     </column>
-    <column id="56" parent="46" name="created_at">
+    <column id="60" parent="48" name="created_at">
       <state-number>21917</state-number>
       <mandatory>1</mandatory>
       <data-type>timestamp|0</data-type>
     </column>
-    <column id="57" parent="46" name="updated_at">
+    <column id="61" parent="48" name="updated_at">
       <state-number>21917</state-number>
       <mandatory>1</mandatory>
       <data-type>timestamp|0</data-type>
     </column>
-    <index id="58" parent="46" name="ar_internal_metadata_pkey">
+    <index id="62" parent="48" name="ar_internal_metadata_pkey">
       <object-id>44651</object-id>
       <columns>key</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <key id="59" parent="46" name="ar_internal_metadata_pkey">
+    <key id="63" parent="48" name="ar_internal_metadata_pkey">
       <object-id>44652</object-id>
       <columns>key</columns>
       <underlying-index>ar_internal_metadata_pkey</underlying-index>
       <primary>1</primary>
     </key>
-    <column id="60" parent="47" name="id">
+    <column id="64" parent="49" name="id">
       <state-number>21902</state-number>
       <mandatory>1</mandatory>
       <data-type>integer|0</data-type>
       <default-expression>nextval(&apos;categories_id_seq&apos;::regclass)</default-expression>
     </column>
-    <column id="61" parent="47" name="name">
+    <column id="65" parent="49" name="name">
       <state-number>21902</state-number>
       <data-type>varchar|0</data-type>
     </column>
-    <column id="62" parent="47" name="created_at">
+    <column id="66" parent="49" name="created_at">
       <state-number>21902</state-number>
       <mandatory>1</mandatory>
       <data-type>timestamp|0</data-type>
     </column>
-    <column id="63" parent="47" name="updated_at">
+    <column id="67" parent="49" name="updated_at">
       <state-number>21902</state-number>
       <mandatory>1</mandatory>
       <data-type>timestamp|0</data-type>
     </column>
-    <index id="64" parent="47" name="categories_pkey">
+    <index id="68" parent="49" name="categories_pkey">
       <object-id>44578</object-id>
       <columns>id</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <key id="65" parent="47" name="categories_pkey">
+    <key id="69" parent="49" name="categories_pkey">
       <object-id>44579</object-id>
       <columns>id</columns>
       <underlying-index>categories_pkey</underlying-index>
       <primary>1</primary>
     </key>
-    <column id="66" parent="48" name="id">
+    <column id="70" parent="50" name="id">
       <state-number>22982</state-number>
       <mandatory>1</mandatory>
       <data-type>integer|0</data-type>
       <default-expression>nextval(&apos;favourites_id_seq&apos;::regclass)</default-expression>
     </column>
-    <column id="67" parent="48" name="user_id">
+    <column id="71" parent="50" name="user_id">
       <state-number>22982</state-number>
       <data-type>integer|0</data-type>
     </column>
-    <column id="68" parent="48" name="product_id">
+    <column id="72" parent="50" name="product_id">
       <state-number>22982</state-number>
       <data-type>integer|0</data-type>
     </column>
-    <column id="69" parent="48" name="created_at">
+    <column id="73" parent="50" name="created_at">
       <state-number>22982</state-number>
       <mandatory>1</mandatory>
       <data-type>timestamp|0</data-type>
     </column>
-    <column id="70" parent="48" name="updated_at">
+    <column id="74" parent="50" name="updated_at">
       <state-number>22982</state-number>
       <mandatory>1</mandatory>
       <data-type>timestamp|0</data-type>
     </column>
-    <index id="71" parent="48" name="favourites_pkey">
+    <index id="75" parent="50" name="favourites_pkey">
       <object-id>45129</object-id>
       <columns>id</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <index id="72" parent="48" name="index_favourites_on_user_id">
+    <index id="76" parent="50" name="index_favourites_on_user_id">
       <object-id>45141</object-id>
       <columns>user_id</columns>
       <desc-columns></desc-columns>
     </index>
-    <index id="73" parent="48" name="index_favourites_on_product_id">
+    <index id="77" parent="50" name="index_favourites_on_product_id">
       <object-id>45142</object-id>
       <columns>product_id</columns>
       <desc-columns></desc-columns>
     </index>
-    <key id="74" parent="48" name="favourites_pkey">
+    <key id="78" parent="50" name="favourites_pkey">
       <object-id>45130</object-id>
       <columns>id</columns>
       <underlying-index>favourites_pkey</underlying-index>
       <primary>1</primary>
     </key>
-    <foreign-key id="75" parent="48" name="fk_rails_3073f88368">
+    <foreign-key id="79" parent="50" name="fk_rails_3073f88368">
       <object-id>45131</object-id>
       <columns>user_id</columns>
       <ref-key>~.users.users_pkey</ref-key>
       <cascade-update-rule>restrict</cascade-update-rule>
       <cascade-delete-rule>restrict</cascade-delete-rule>
     </foreign-key>
-    <foreign-key id="76" parent="48" name="fk_rails_bf07a045a1">
+    <foreign-key id="80" parent="50" name="fk_rails_bf07a045a1">
       <object-id>45136</object-id>
       <columns>product_id</columns>
       <ref-key>~.products.products_pkey</ref-key>
       <cascade-update-rule>restrict</cascade-update-rule>
       <cascade-delete-rule>restrict</cascade-delete-rule>
     </foreign-key>
-    <column id="77" parent="49" name="id">
+    <column id="81" parent="51" name="id">
       <state-number>23057</state-number>
       <mandatory>1</mandatory>
       <data-type>integer|0</data-type>
       <default-expression>nextval(&apos;likes_id_seq&apos;::regclass)</default-expression>
     </column>
-    <column id="78" parent="49" name="user_id">
+    <column id="82" parent="51" name="user_id">
       <state-number>23057</state-number>
       <data-type>integer|0</data-type>
     </column>
-    <column id="79" parent="49" name="review_id">
+    <column id="83" parent="51" name="review_id">
       <state-number>23057</state-number>
       <data-type>integer|0</data-type>
     </column>
-    <column id="80" parent="49" name="created_at">
+    <column id="84" parent="51" name="created_at">
       <state-number>23057</state-number>
       <mandatory>1</mandatory>
       <data-type>timestamp|0</data-type>
     </column>
-    <column id="81" parent="49" name="updated_at">
+    <column id="85" parent="51" name="updated_at">
       <state-number>23057</state-number>
       <mandatory>1</mandatory>
       <data-type>timestamp|0</data-type>
     </column>
-    <index id="82" parent="49" name="likes_pkey">
+    <index id="86" parent="51" name="likes_pkey">
       <object-id>45150</object-id>
       <columns>id</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <index id="83" parent="49" name="index_likes_on_user_id">
+    <index id="87" parent="51" name="index_likes_on_user_id">
       <object-id>45162</object-id>
       <columns>user_id</columns>
       <desc-columns></desc-columns>
     </index>
-    <index id="84" parent="49" name="index_likes_on_review_id">
+    <index id="88" parent="51" name="index_likes_on_review_id">
       <object-id>45163</object-id>
       <columns>review_id</columns>
       <desc-columns></desc-columns>
     </index>
-    <key id="85" parent="49" name="likes_pkey">
+    <key id="89" parent="51" name="likes_pkey">
       <object-id>45151</object-id>
       <columns>id</columns>
       <underlying-index>likes_pkey</underlying-index>
       <primary>1</primary>
     </key>
-    <foreign-key id="86" parent="49" name="fk_rails_1e09b5dabf">
+    <foreign-key id="90" parent="51" name="fk_rails_1e09b5dabf">
       <object-id>45152</object-id>
       <columns>user_id</columns>
       <ref-key>~.users.users_pkey</ref-key>
       <cascade-update-rule>restrict</cascade-update-rule>
       <cascade-delete-rule>restrict</cascade-delete-rule>
     </foreign-key>
-    <foreign-key id="87" parent="49" name="fk_rails_cceb218658">
+    <foreign-key id="91" parent="51" name="fk_rails_cceb218658">
       <object-id>45157</object-id>
       <columns>review_id</columns>
       <ref-key>~.reviews.reviews_pkey</ref-key>
       <cascade-update-rule>restrict</cascade-update-rule>
       <cascade-delete-rule>restrict</cascade-delete-rule>
     </foreign-key>
-    <column id="88" parent="50" name="id">
+    <column id="92" parent="52" name="id">
       <state-number>21903</state-number>
       <mandatory>1</mandatory>
       <data-type>integer|0</data-type>
       <default-expression>nextval(&apos;products_id_seq&apos;::regclass)</default-expression>
     </column>
-    <column id="89" parent="50" name="title">
+    <column id="93" parent="52" name="title">
       <state-number>21903</state-number>
       <data-type>varchar|0</data-type>
     </column>
-    <column id="90" parent="50" name="description">
+    <column id="94" parent="52" name="description">
       <state-number>21903</state-number>
       <data-type>text|0</data-type>
     </column>
-    <column id="91" parent="50" name="price">
+    <column id="95" parent="52" name="price">
       <state-number>21903</state-number>
       <data-type>integer|0</data-type>
     </column>
-    <column id="92" parent="50" name="created_at">
+    <column id="96" parent="52" name="created_at">
       <state-number>21903</state-number>
       <mandatory>1</mandatory>
       <data-type>timestamp|0</data-type>
     </column>
-    <column id="93" parent="50" name="updated_at">
+    <column id="97" parent="52" name="updated_at">
       <state-number>21903</state-number>
       <mandatory>1</mandatory>
       <data-type>timestamp|0</data-type>
     </column>
-    <column id="94" parent="50" name="sales_price">
+    <column id="98" parent="52" name="sales_price">
       <state-number>21903</state-number>
       <data-type>integer|0</data-type>
     </column>
-    <column id="95" parent="50" name="category_id">
+    <column id="99" parent="52" name="category_id">
       <state-number>21903</state-number>
       <data-type>integer|0</data-type>
     </column>
-    <column id="96" parent="50" name="user_id">
+    <column id="100" parent="52" name="user_id">
       <state-number>21903</state-number>
       <data-type>integer|0</data-type>
     </column>
-    <index id="97" parent="50" name="products_pkey">
+    <index id="101" parent="52" name="products_pkey">
       <object-id>44589</object-id>
       <columns>id</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <index id="98" parent="50" name="index_products_on_category_id">
+    <index id="102" parent="52" name="index_products_on_category_id">
       <object-id>44591</object-id>
       <columns>category_id</columns>
       <desc-columns></desc-columns>
     </index>
-    <index id="99" parent="50" name="index_products_on_user_id">
+    <index id="103" parent="52" name="index_products_on_user_id">
       <object-id>44592</object-id>
       <columns>user_id</columns>
       <desc-columns></desc-columns>
     </index>
-    <key id="100" parent="50" name="products_pkey">
+    <key id="104" parent="52" name="products_pkey">
       <object-id>44590</object-id>
       <columns>id</columns>
       <underlying-index>products_pkey</underlying-index>
       <primary>1</primary>
     </key>
-    <foreign-key id="101" parent="50" name="fk_rails_fb915499a4">
+    <foreign-key id="105" parent="52" name="fk_rails_fb915499a4">
       <object-id>44617</object-id>
       <columns>category_id</columns>
       <ref-key>~.categories.categories_pkey</ref-key>
       <cascade-update-rule>restrict</cascade-update-rule>
       <cascade-delete-rule>restrict</cascade-delete-rule>
     </foreign-key>
-    <foreign-key id="102" parent="50" name="fk_rails_dee2631783">
+    <foreign-key id="106" parent="52" name="fk_rails_dee2631783">
       <object-id>44622</object-id>
       <columns>user_id</columns>
       <ref-key>~.users.users_pkey</ref-key>
       <cascade-update-rule>restrict</cascade-update-rule>
       <cascade-delete-rule>restrict</cascade-delete-rule>
     </foreign-key>
-    <column id="103" parent="51" name="id">
+    <column id="107" parent="53" name="id">
       <state-number>21906</state-number>
       <mandatory>1</mandatory>
       <data-type>integer|0</data-type>
       <default-expression>nextval(&apos;reviews_id_seq&apos;::regclass)</default-expression>
     </column>
-    <column id="104" parent="51" name="body">
+    <column id="108" parent="53" name="body">
       <state-number>21906</state-number>
       <data-type>text|0</data-type>
     </column>
-    <column id="105" parent="51" name="product_id">
+    <column id="109" parent="53" name="product_id">
       <state-number>21906</state-number>
       <data-type>integer|0</data-type>
     </column>
-    <column id="106" parent="51" name="created_at">
+    <column id="110" parent="53" name="created_at">
       <state-number>21906</state-number>
       <mandatory>1</mandatory>
       <data-type>timestamp|0</data-type>
     </column>
-    <column id="107" parent="51" name="updated_at">
+    <column id="111" parent="53" name="updated_at">
       <state-number>21906</state-number>
       <mandatory>1</mandatory>
       <data-type>timestamp|0</data-type>
     </column>
-    <column id="108" parent="51" name="star_count">
+    <column id="112" parent="53" name="star_count">
       <state-number>21906</state-number>
       <data-type>integer|0</data-type>
     </column>
-    <column id="109" parent="51" name="user_id">
+    <column id="113" parent="53" name="user_id">
       <state-number>21906</state-number>
       <data-type>integer|0</data-type>
     </column>
-    <index id="110" parent="51" name="reviews_pkey">
+    <index id="114" parent="53" name="reviews_pkey">
       <object-id>44602</object-id>
       <columns>id</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <index id="111" parent="51" name="index_reviews_on_product_id">
+    <index id="115" parent="53" name="index_reviews_on_product_id">
       <object-id>44604</object-id>
       <columns>product_id</columns>
       <desc-columns></desc-columns>
     </index>
-    <index id="112" parent="51" name="index_reviews_on_user_id">
+    <index id="116" parent="53" name="index_reviews_on_user_id">
       <object-id>44605</object-id>
       <columns>user_id</columns>
       <desc-columns></desc-columns>
     </index>
-    <key id="113" parent="51" name="reviews_pkey">
+    <key id="117" parent="53" name="reviews_pkey">
       <object-id>44603</object-id>
       <columns>id</columns>
       <underlying-index>reviews_pkey</underlying-index>
       <primary>1</primary>
     </key>
-    <foreign-key id="114" parent="51" name="fk_rails_bedd9094d4">
+    <foreign-key id="118" parent="53" name="fk_rails_bedd9094d4">
       <object-id>44627</object-id>
       <columns>product_id</columns>
       <ref-key>~.products.products_pkey</ref-key>
       <cascade-update-rule>restrict</cascade-update-rule>
       <cascade-delete-rule>restrict</cascade-delete-rule>
     </foreign-key>
-    <foreign-key id="115" parent="51" name="fk_rails_74a66bd6c5">
+    <foreign-key id="119" parent="53" name="fk_rails_74a66bd6c5">
       <object-id>44632</object-id>
       <columns>user_id</columns>
       <ref-key>~.users.users_pkey</ref-key>
       <cascade-update-rule>restrict</cascade-update-rule>
       <cascade-delete-rule>restrict</cascade-delete-rule>
     </foreign-key>
-    <column id="116" parent="52" name="version">
+    <column id="120" parent="54" name="version">
       <state-number>21914</state-number>
       <mandatory>1</mandatory>
       <data-type>varchar|0</data-type>
     </column>
-    <index id="117" parent="52" name="schema_migrations_pkey">
+    <index id="121" parent="54" name="schema_migrations_pkey">
       <object-id>44643</object-id>
       <columns>version</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <key id="118" parent="52" name="schema_migrations_pkey">
+    <key id="122" parent="54" name="schema_migrations_pkey">
       <object-id>44644</object-id>
       <columns>version</columns>
       <underlying-index>schema_migrations_pkey</underlying-index>
       <primary>1</primary>
     </key>
-    <column id="119" parent="53" name="id">
+    <column id="123" parent="55" name="id">
+      <state-number>23311</state-number>
+      <mandatory>1</mandatory>
+      <data-type>integer|0</data-type>
+      <default-expression>nextval(&apos;taggings_id_seq&apos;::regclass)</default-expression>
+    </column>
+    <column id="124" parent="55" name="tag_id">
+      <state-number>23311</state-number>
+      <data-type>integer|0</data-type>
+    </column>
+    <column id="125" parent="55" name="product_id">
+      <state-number>23311</state-number>
+      <data-type>integer|0</data-type>
+    </column>
+    <column id="126" parent="55" name="created_at">
+      <state-number>23311</state-number>
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+    </column>
+    <column id="127" parent="55" name="updated_at">
+      <state-number>23311</state-number>
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+    </column>
+    <index id="128" parent="55" name="taggings_pkey">
+      <object-id>45351</object-id>
+      <columns>id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <index id="129" parent="55" name="index_taggings_on_tag_id">
+      <object-id>45363</object-id>
+      <columns>tag_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="130" parent="55" name="index_taggings_on_product_id">
+      <object-id>45364</object-id>
+      <columns>product_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="131" parent="55" name="taggings_pkey">
+      <object-id>45352</object-id>
+      <columns>id</columns>
+      <underlying-index>taggings_pkey</underlying-index>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="132" parent="55" name="fk_rails_9fcd2e236b">
+      <object-id>45353</object-id>
+      <columns>tag_id</columns>
+      <ref-key>~.tags.tags_pkey</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="133" parent="55" name="fk_rails_5e1376a5c2">
+      <object-id>45358</object-id>
+      <columns>product_id</columns>
+      <ref-key>~.products.products_pkey</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="134" parent="56" name="id">
+      <state-number>23310</state-number>
+      <mandatory>1</mandatory>
+      <data-type>integer|0</data-type>
+      <default-expression>nextval(&apos;tags_id_seq&apos;::regclass)</default-expression>
+    </column>
+    <column id="135" parent="56" name="name">
+      <state-number>23310</state-number>
+      <data-type>varchar|0</data-type>
+    </column>
+    <column id="136" parent="56" name="created_at">
+      <state-number>23310</state-number>
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+    </column>
+    <column id="137" parent="56" name="updated_at">
+      <state-number>23310</state-number>
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+    </column>
+    <index id="138" parent="56" name="tags_pkey">
+      <object-id>45343</object-id>
+      <columns>id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="139" parent="56" name="tags_pkey">
+      <object-id>45344</object-id>
+      <columns>id</columns>
+      <underlying-index>tags_pkey</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="140" parent="57" name="id">
       <state-number>21909</state-number>
       <mandatory>1</mandatory>
       <data-type>integer|0</data-type>
       <default-expression>nextval(&apos;users_id_seq&apos;::regclass)</default-expression>
     </column>
-    <column id="120" parent="53" name="first_name">
+    <column id="141" parent="57" name="first_name">
       <state-number>21909</state-number>
       <data-type>varchar|0</data-type>
     </column>
-    <column id="121" parent="53" name="last_name">
+    <column id="142" parent="57" name="last_name">
       <state-number>21909</state-number>
       <data-type>varchar|0</data-type>
     </column>
-    <column id="122" parent="53" name="email">
+    <column id="143" parent="57" name="email">
       <state-number>21909</state-number>
       <data-type>varchar|0</data-type>
     </column>
-    <column id="123" parent="53" name="password_digest">
+    <column id="144" parent="57" name="password_digest">
       <state-number>21909</state-number>
       <data-type>varchar|0</data-type>
     </column>
-    <column id="124" parent="53" name="created_at">
+    <column id="145" parent="57" name="created_at">
       <state-number>21909</state-number>
       <mandatory>1</mandatory>
       <data-type>timestamp|0</data-type>
     </column>
-    <column id="125" parent="53" name="updated_at">
+    <column id="146" parent="57" name="updated_at">
       <state-number>21909</state-number>
       <mandatory>1</mandatory>
       <data-type>timestamp|0</data-type>
     </column>
-    <index id="126" parent="53" name="users_pkey">
+    <index id="147" parent="57" name="users_pkey">
       <object-id>44615</object-id>
       <columns>id</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <key id="127" parent="53" name="users_pkey">
+    <key id="148" parent="57" name="users_pkey">
       <object-id>44616</object-id>
       <columns>id</columns>
       <underlying-index>users_pkey</underlying-index>

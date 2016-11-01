@@ -10,6 +10,11 @@ Category.create({name:"toy"})
 Category.create({name:"food"})
 Category.create({name:"cloth"})
 
+10.times do
+  Tag.create(name:Faker::Address.city)
+end
+
+
 # create user
 30.times do
   user=User.new
@@ -21,13 +26,14 @@ Category.create({name:"cloth"})
 
 end
 
-400.times do
+40.times do
   p=Product.new()
   p.title=Faker::Name.name             #=> "Tyshawn Johns Sr."
   p.description=Faker::Lorem.word #=> "repellendus"
   p.price=rand(1000)
   p.category=Category.all.sample
   p.user=User.all.sample
+  p.tags=Tag.all.sample(rand(3)+1)
   p.save
 
 end

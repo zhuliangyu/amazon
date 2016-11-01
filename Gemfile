@@ -29,9 +29,10 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'interactive_editor'
 gem 'awesome_print'
 gem 'hirb'
-
+gem 'font-awesome-rails', '~> 4.7'
 gem 'cancancan'
 gem 'pry-rails'
+gem 'chosen-rails', '~> 1.5', '>= 1.5.2'
 
 
 gem 'faker'

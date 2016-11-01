@@ -1,16 +1,16 @@
 class Product < ApplicationRecord
-  has_many :reviews,dependent: :destroy
+  has_many :reviews, dependent: :destroy
   belongs_to :category
   belongs_to :user
-  has_many :favourites,dependent: :destroy
-  has_many :users,through: :favourites
-
-
+  has_many :favourites, dependent: :destroy
+  has_many :users, through: :favourites
+  has_many :taggings, dependent: :destroy
+  has_many :tags, through: :taggings
 
 
   validates :title, :presence => true, :uniqueness => {:case_sensitive => false}
-  validates :title, :presence => true,:uniqueness => true
-  validates :price, :presence=>true
+  validates :title, :presence => true, :uniqueness => true
+  validates :price, :presence => true
   validates :sales_price, :numericality => {less_than: :price}
   after_initialize :init_config
 
@@ -32,13 +32,10 @@ class Product < ApplicationRecord
   # validates :description, length: { maximum: 10 }
 
 
-
   # def search(words)
   #
   #
   # end
-
-
 
 
 end

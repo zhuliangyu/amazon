@@ -20,6 +20,12 @@
 
 
     </div>
+
+    <div>
+      <%= f.collection_select(:tag_ids, Tag.all, :id, :name,{},{multiple:true,class:'chosen-select'}) %>
+
+
+    </div>
     <%= f.submit %>
 
 
@@ -58,4 +64,8 @@
 
 <% end %>
 
+
+<script type="text/javascript" charset="utf-8">
+  $('.chosen-select').chosen({width: '200px'});
+</script>
 

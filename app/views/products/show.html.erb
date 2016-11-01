@@ -25,6 +25,12 @@
 
   <br>
 
+  <section class="tag-widge">
+    <h1>Tagging</h1>
+    <% tag_arr=@p.tags.map{|tag| tag.name} %>
+    <%= tag_arr.join(" , ") %>
+  </section>
+
 
 </div>
 
