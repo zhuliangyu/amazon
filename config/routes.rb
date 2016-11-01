@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
 
 
+  # get 'tags/index'
+  #
+  # get 'tags/show'
+  resources :tags,only:[:index,:show]
+
+
   namespace :admin do
     get 'questions/index'
   end

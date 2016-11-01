@@ -1,0 +1,8 @@
+<h1>Tags#show</h1>
+<p>Find me in app/views/tags/show.html.erb</p>
+
+<% @products.each do |p| %>
+
+    <%= link_to p.title, product_path(p) %>
+    <br>
+<% end %>

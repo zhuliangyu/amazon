@@ -1,0 +1,6 @@
+<h1>Tags#index</h1>
+<% @tags.each do |e| %>
+    <%= link_to e.name,tag_path(e)  %>
+
+    <br>
+<% end %>
