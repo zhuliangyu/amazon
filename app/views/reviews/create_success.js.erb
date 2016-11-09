@@ -1,0 +1,6 @@
+$('#reviews').prepend("<%= j render 'review',review:@review %>");
+
+// $('.review-body').val('');
+
+<% @review=Review.new %>
+$('#review-form').html('<%= j render 'form'%>');

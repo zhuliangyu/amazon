@@ -1,0 +1,9 @@
+<div id="<%= dom_id(review) %>">
+
+  <p>User's first name: <%= review.user.first_name %></p>
+  <p>User's comment: <%= review.body %></p>
+  <p><%= review.star_count %></p>
+  <%= link_to "Delete", review_path(review), method: :delete, remote: true %>
+  <hr>
+
+</div>

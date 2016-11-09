@@ -27,11 +27,20 @@ class ReviewsController < ApplicationController
     @user=current_user
     @review.user=@user
 
-    if @review.save
-      redirect_to product_path(@p)
-    else
-      render "/products/show"
+    respond_to do |format|
+      if @review.save
+        format.html{redirect_to product_path(@p)}
+        format.js{render :create_success}
+      else
+        format.html{render "/products/show"}
+        format.js{render :create_failure}
+
+
+      end
+
+
     end
+
 
 
   end
@@ -42,7 +51,11 @@ class ReviewsController < ApplicationController
     @review=Review.find params[:id]
     # @p=Product.find(@review.product_id)
     @review.destroy
-    redirect_to product_path(@review.product_id)
+
+    respond_to do |format|
+      format.html { redirect_to product_path(@review.product_id) }
+      format.js{render}
+    end
 
 
   end

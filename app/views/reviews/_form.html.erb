@@ -1,0 +1,15 @@
+<%= @review.errors.full_messages.join(",") %><%= form_for [@p, @review], remote: true do |f| %>
+    <div>
+      <%= f.label :body %>
+      <%= f.text_area :body %>
+    </div>
+    <div>
+      <%= f.label :star_count %>
+      <%= f.number_field :star_count %>
+    </div>
+
+
+
+    <%= f.submit %>
+
+<% end %>

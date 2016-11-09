@@ -12,7 +12,6 @@
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
-      <introspection-scope>amazon_development:pg_catalog,public</introspection-scope>
       <resolve-scope>amazon_development:public</resolve-scope>
     </data-source>
     <data-source name="Rails amazon: production" uuid="f399eb2a-9503-4197-a2fa-89acd83e3129">

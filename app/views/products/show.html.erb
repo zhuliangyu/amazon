@@ -10,7 +10,7 @@
   <%= link_to "Edit", edit_product_path(@p) %>
 
   <%= @p.favourites.count %> favours
-  <% if user_sign_in? && can?(:favour,@p,current_user) %>
+  <% if user_sign_in? && can?(:favour, @p, current_user) %>
       <% if @p.favour_by?(current_user) %>
 
 
@@ -27,7 +27,7 @@
 
   <section class="tag-widge">
     <h1>Tagging</h1>
-    <% tag_arr=@p.tags.map{|tag| tag.name} %>
+    <% tag_arr=@p.tags.map { |tag| tag.name } %>
     <%= tag_arr.join(" , ") %>
   </section>
 
@@ -36,24 +36,22 @@
 
 
 <h2>Reviews</h2>
-<%= form_for [@p, @review] do |f| %>
-    <div>
-      <%= f.label :body %>
-      <%= f.text_area :body %>
-    </div>
-    <div>
-      <%= f.label :star_count %>
-      <%= f.text_area :star_count %>
-    </div>
-    <%= f.submit %>
-<% end %>
 
-<% @p.reviews.each do |review| %>
-    <p>User's first name: <%= review.user.first_name %></p>
-    <p>User's comment: <%= review.body %></p>
-    <p><%= review.star_count %></p>
 
-    <%= link_to "Delete", review_path(review), method: :delete %>
-    <hr>
-<% end %>
+<div id="review-form">
+  <%= render 'reviews/form' %>
+
+</div>
+
+
+<div id="reviews">
+  <% @p.reviews.each do |review| %>
+
+      <%= render 'reviews/review', review: review %>
+
+  <% end %>
+
+
+</div>
+
 
