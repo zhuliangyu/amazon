@@ -1,17 +1,23 @@
 class FavouritesController < ApplicationController
 
 
-
   def create
     favour = Favourite.new
-    product = Product.find params[:product_id]
-    favour.product = product
+    @product = Product.find params[:product_id]
+
+    favour.product = @product
     favour.user = current_user
     # binding.pry
-    if can?(:favour,product,current_user) &&favour.save
-      redirect_to product_path(product), notice: "Thanks for liking!"
-    else
-      redirect_to product_path(product), alert: "Can't like! Liked already?"
+    respond_to do |format|
+      if can?(:favour, @product, current_user) &&favour.save
+
+        format.js { render 'favourites/create_success'}
+        format.html { redirect_to product_path(@product), notice: "Thanks for liking!" }
+      else
+        # format.js { render js: "alert('yyy')" }
+        format.html { redirect_to product_path(@product), alert: "Can't like! Liked already?" }
+      end
+
     end
   end
 

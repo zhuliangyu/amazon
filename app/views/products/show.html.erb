@@ -9,18 +9,11 @@
   <%= link_to "Delete", product_path(@p), method: :delete %>
   <%= link_to "Edit", edit_product_path(@p) %>
 
-  <%= @p.favourites.count %> favours
-  <% if user_sign_in? && can?(:favour, @p, current_user) %>
-      <% if @p.favour_by?(current_user) %>
+  <br>
+  <div id="favouritezzzzzz">
+   <%= render 'favourites/favourite',product:@p %>
 
-
-          <%= link_to "unFavourite", favourite_path(@p), method: :delete %>
-      <% else %>
-          <%= link_to "Favourite", product_favourites_path(@p), method: :post %>
-
-      <% end %>
-  <% end %>
-
+  </div>
 
 
   <br>
