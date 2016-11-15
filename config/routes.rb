@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   # get 'tags/index'
   #
   # get 'tags/show'
-  resources :tags,only:[:index,:show]
+  resources :tags, only: [:index, :show]
 
 
   namespace :admin do
@@ -14,7 +14,7 @@ Rails.application.routes.draw do
   resources :products, shallow: true do
     # resources :products do
 
-      resources :favourites, only: [:create, :destroy]
+    resources :favourites, only: [:create, :destroy]
     resources :reviews
   end
 
@@ -23,6 +23,13 @@ Rails.application.routes.draw do
   resources :sessions, only: [:new, :create] do
     delete :destroy, on: :collection
 
+  end
+
+
+  namespace :api, default: {format: 'json'} do
+    namespace :v1 do
+      resources :products
+    end
   end
 
 

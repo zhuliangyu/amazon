@@ -4,7 +4,7 @@
       <!--<%= p.title %>-->
       <%= p.description %>
       $<%= p.price.round(3) %>
-      <%= p.category.name %>
+      <%= p.category.name if p.category %>
     </div>
 
 

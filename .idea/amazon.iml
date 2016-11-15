@@ -295,6 +295,7 @@
     <orderEntry type="library" scope="PROVIDED" name="actionmailer (v5.0.0.1, RVM: ruby-2.3.1 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="actionpack (v5.0.0.1, RVM: ruby-2.3.1 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="actionview (v5.0.0.1, RVM: ruby-2.3.1 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="active_model_serializers (v0.10.2, RVM: ruby-2.3.1 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activejob (v5.0.0.1, RVM: ruby-2.3.1 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activemodel (v5.0.0.1, RVM: ruby-2.3.1 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activerecord (v5.0.0.1, RVM: ruby-2.3.1 [global]) [gem]" level="application" />
@@ -328,6 +329,9 @@
     <orderEntry type="library" scope="PROVIDED" name="interactive_editor (v0.0.10, RVM: ruby-2.3.1 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jbuilder (v2.6.0, RVM: ruby-2.3.1 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jquery-rails (v4.2.1, RVM: ruby-2.3.1 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="jsonapi (v0.1.1.beta6, RVM: ruby-2.3.1 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="jsonapi-parser (v0.1.1.beta3, RVM: ruby-2.3.1 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="jsonapi-renderer (v0.1.1.beta1, RVM: ruby-2.3.1 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="listen (v3.0.8, RVM: ruby-2.3.1 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="loofah (v2.0.3, RVM: ruby-2.3.1 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mail (v2.6.4, RVM: ruby-2.3.1 [global]) [gem]" level="application" />
@@ -346,6 +350,7 @@
     <orderEntry type="library" scope="PROVIDED" name="puma (v3.6.0, RVM: ruby-2.3.1 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack (v2.0.1, RVM: ruby-2.3.1 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack-contrib (v1.2.0, RVM: ruby-2.3.1 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rack-cors (v0.4.0, RVM: ruby-2.3.1 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack-test (v0.6.3, RVM: ruby-2.3.1 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rails (v5.0.0.1, RVM: ruby-2.3.1 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rails-controller-testing (v1.0.1, RVM: ruby-2.3.1 [global]) [gem]" level="application" />

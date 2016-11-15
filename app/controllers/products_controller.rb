@@ -26,10 +26,21 @@ class ProductsController < ApplicationController
   def show
     @p= Product.find(params[:id])
     @review=Review.new
+    respond_to do |format|
+      format.html{render}
+      # http://localhost:3000/products/1.json
+      format.json{render json:@p.to_json}
+    end
   end
 
   def index
     @ps=Product.all
+    respond_to do |format|
+      format.html { render }
+      # http://localhost:3000/products.json
+      format.json {render json:@ps.to_json}
+
+    end
 
   end
 
@@ -60,7 +71,7 @@ class ProductsController < ApplicationController
 
   private
   def get_params
-    params.require(:product).permit(:title, :description, :price, :category_id,tag_ids: [])
+    params.require(:product).permit(:title, :description, :price, :category_id, tag_ids: [])
   end
 
 end

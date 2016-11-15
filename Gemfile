@@ -33,9 +33,10 @@ gem 'font-awesome-rails', '~> 4.7'
 gem 'cancancan'
 gem 'pry-rails'
 gem 'chosen-rails', '~> 1.5', '>= 1.5.2'
-
-
+gem 'rack-cors'
 gem 'faker'
+gem 'active_model_serializers', '~> 0.10.0'
+
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

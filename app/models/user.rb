@@ -20,9 +20,17 @@ class User < ApplicationRecord
             uniqueness: { case_sensitive: false },
             format: VALID_EMAIL_REGEX
 
+  before_create :generate_api_key
+
 
   def full_name
     @full_name=first_name.capitalize+" "+last_name.capitalize
+
+  end
+
+  def generate_api_key
+    self.api_key=SecureRandom.hex(32)
+
 
   end
 

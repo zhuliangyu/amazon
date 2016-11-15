@@ -1,11 +1,9 @@
-<% if product.favour_by?(current_user) %>
+<%# if user_sign_in? && can?(:favour, @product) %>
 
-
-    <%= link_to "unFavourite", favourite_path(product), method: :delete %>
-<% else %>
-    <%= link_to "Favourite", product_favourites_path(product), method: :post, remote: true %>
-
-
-<% end %>
-<h4><%= product.favourites.count %> favours</h4>
-
+    <% if user_sign_in? && product.favour_by?(current_user) %>
+        <%= link_to "unFavourite", favourite_path(product), method: :delete %>
+    <% else %>
+        <%= link_to "Favourite", product_favourites_path(product), method: :post, remote: true %>
+    <% end %>
+    <h4><%= product.favourites.count %> favours</h4>
+<%#end %>

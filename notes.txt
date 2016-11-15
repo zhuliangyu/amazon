@@ -1,0 +1,37 @@
+http://localhost:3000/api/v1/products
+
+index
+get
+http://localhost:3000/api/v1/products.json
+
+rails g serializer product
+
+
+Favourite.where(product:object).count
+Favourite.where(product:Product.last).count
+
+post
+http://localhost:3000/api/v1/products
+product[title]
+product[description]
+product[price]
+
+delete
+http://localhost:3000/api/v1/products/:id	
+http://localhost:3000/api/v1/products/2
+
+patch
+http://localhost:3000/api/v1/products/:id
+
+
+rails g migration add_api_key_to_users api_key
+
+api_key
+dddd535e0cd129d601aea719735b56ccf676455308c4dc5f1d82a1031c04776c
+
+User.where(api_key:nil).each do |user|
+user.update(api_key:SecureRandom.hex(32))
+end
+
+
+http://localhost:3000/api/v1/products/2
