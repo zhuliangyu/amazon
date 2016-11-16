@@ -25,7 +25,6 @@
     </div>
 <% end %>
 
-
 <%= link_to "home", home_path %>
 <%= link_to "about", about_path %>
 <%= link_to "contact", contact_path %>
@@ -38,10 +37,14 @@
 <% else %>
     <%= link_to "Log in", new_session_path %>
     <%= link_to "Sign up a new user", new_user_path %>
-
-
-
 <% end %>
+
+<%= link_to "Log in with Twitter", sign_in_with_twitter_path %>
+<%= link_to "Log in with Facebook", sign_in_with_facebook_path %>
+
+
+
+
 
 
 

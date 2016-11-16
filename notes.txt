@@ -35,3 +35,58 @@ end
 
 
 http://localhost:3000/api/v1/products/2
+
+
+rails new look4tutor -T -d postgresql
+
+*********************
+callback url
+http://127.0.0.1:3000/auth/twitter/callback
+http://127.0.0.1:3000/auth/twitter/
+
+http://127.0.0.1:3000
+
+Consumer Key (API Key)	
+mAAmYVTjITQhINfzAJpH9Z26S
+Consumer Secret (API Secret)
+mRg2POmRug7QrskWuvu8H0uLKMX2oXXv1YxQEoD8yin9IJ8wcE
+
+rails g controller callbacks twitter
+
+sign_in_with_twitter
+
+rails g migration add_twitter_to_users uid, provider, token, secret, raw_data: text
+
+******************
+add_column :users, :uid, :string
+    add_column :users, :provider, :string
+    add_column :users, :token, :string
+    add_column :users, :secret, :string
+    add_column :users, :raw_data, :text
+
+
+
+User.where(provider:'twitter',uid:tt_data['uid']).first
+ t.string   "first_name"
+    t.string   "last_name"
+    t.string   "email"
+    t.string   "password_digest"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.string   "api_key"
+    t.string   "uid"
+    t.string   "provider"
+    t.string   "token"
+    t.string   "secret"
+    t.text     "raw_data"
+
+
+******************
+env file
+
+refactory my code
+
+http://localhost:3000/auth/facebook?display=popup
+http://localhost:3000/auth/facebook/callback
+
+

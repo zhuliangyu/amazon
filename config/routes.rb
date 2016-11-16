@@ -1,6 +1,16 @@
 Rails.application.routes.draw do
 
 
+  get 'callbacks/twitter'
+
+  # get 'http://127.0.0.1:3000/auth/twitter/'
+  get '/auth/twitter', as: :sign_in_with_twitter
+  get '/auth/twitter/callback' => 'callbacks#twitter'
+
+  # get '/auth/facebook?display=popup', as: :sign_in_with_facebook
+  get '/auth/facebook', as: :sign_in_with_facebook
+  get '/auth/facebook/callback' => 'callbacks#facebook'
+
   # get 'tags/index'
   #
   # get 'tags/show'

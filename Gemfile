@@ -36,6 +36,10 @@ gem 'chosen-rails', '~> 1.5', '>= 1.5.2'
 gem 'rack-cors'
 gem 'faker'
 gem 'active_model_serializers', '~> 0.10.0'
+gem 'omniauth-twitter'
+gem 'twitter', '~> 5.16'
+gem 'omniauth-facebook'
+
 
 
 # Use Capistrano for deployment

@@ -1,0 +1,258 @@
+{
+  "provider": "twitter",
+  "uid": "118167270",
+  "info": {
+    "nickname": "zhuliangyu",
+    "name": "zhuliangyu",
+    "email": null,
+    "location": "",
+    "image": "http://abs.twimg.com/sticky/default_profile_images/default_profile_4_normal.png",
+    "description": "",
+    "urls": {
+      "Website": null,
+      "Twitter": "https://twitter.com/zhuliangyu"
+    }
+  },
+  "credentials": {
+    "token": "118167270-SQfHbPjseENVvaw63qF0gMBHjvOmXQLOakSN1UPG",
+    "secret": "Aj898DdTFcxI1C5O8911k2fnzRHlKtso5jcEHs2KyzXzx"
+  },
+  "extra": {
+    "access_token": {
+      "token": "118167270-SQfHbPjseENVvaw63qF0gMBHjvOmXQLOakSN1UPG",
+      "secret": "Aj898DdTFcxI1C5O8911k2fnzRHlKtso5jcEHs2KyzXzx",
+      "consumer": {
+        "key": "mAAmYVTjITQhINfzAJpH9Z26S",
+        "secret": "mRg2POmRug7QrskWuvu8H0uLKMX2oXXv1YxQEoD8yin9IJ8wcE",
+        "options": {
+          "signature_method": "HMAC-SHA1",
+          "request_token_path": "/oauth/request_token",
+          "authorize_path": "/oauth/authenticate",
+          "access_token_path": "/oauth/access_token",
+          "proxy": null,
+          "scheme": "header",
+          "http_method": "post",
+          "oauth_version": "1.0",
+          "site": "https://api.twitter.com"
+        },
+        "http": {
+          "address": "api.twitter.com",
+          "port": 443,
+          "local_host": null,
+          "local_port": null,
+          "curr_http_version": "1.1",
+          "keep_alive_timeout": 2,
+          "last_communicated": null,
+          "close_on_empty_response": false,
+          "socket": null,
+          "started": false,
+          "open_timeout": 30,
+          "read_timeout": 30,
+          "continue_timeout": null,
+          "debug_output": null,
+          "proxy_from_env": true,
+          "proxy_uri": null,
+          "proxy_address": null,
+          "proxy_port": null,
+          "proxy_user": null,
+          "proxy_pass": null,
+          "use_ssl": true,
+          "ssl_context": {
+            "cert": null,
+            "key": null,
+            "client_ca": null,
+            "ca_file": null,
+            "ca_path": null,
+            "timeout": null,
+            "verify_mode": 0,
+            "verify_depth": null,
+            "renegotiation_cb": null,
+            "verify_callback": null,
+            "cert_store": null,
+            "extra_chain_cert": null,
+            "client_cert_cb": null,
+            "session_id_context": null,
+            "tmp_dh_callback": null,
+            "session_get_cb": null,
+            "session_new_cb": null,
+            "session_remove_cb": null,
+            "tmp_ecdh_callback": null,
+            "servername_cb": null,
+            "npn_protocols": null,
+            "alpn_protocols": null,
+            "alpn_select_cb": null,
+            "npn_select_cb": null
+          },
+          "ssl_session": {},
+          "sspi_enabled": false,
+          "ca_file": null,
+          "ca_path": null,
+          "cert": null,
+          "cert_store": null,
+          "ciphers": null,
+          "key": null,
+          "ssl_timeout": null,
+          "ssl_version": null,
+          "verify_callback": null,
+          "verify_depth": null,
+          "verify_mode": 0
+        },
+        "http_method": "post",
+        "uri": {
+          "scheme": "https",
+          "user": null,
+          "password": null,
+          "host": "api.twitter.com",
+          "port": 443,
+          "path": "",
+          "query": null,
+          "opaque": null,
+          "fragment": null,
+          "parser": {
+            "regexp": {
+              "SCHEME": "(?-mix:\\A[A-Za-z][A-Za-z0-9+\\-.]*\\z)",
+              "USERINFO": "(?-mix:\\A(?:%\\h\\h|[!$&-.0-;=A-Z_a-z~])*\\z)",
+              "HOST": "(?-mix:\\A(?:(?<IP-literal>\\[(?:(?<IPv6address>(?:\\h{1,4}:){6}(?<ls32>\\h{1,4}:\\h{1,4}|(?<IPv4address>(?<dec-octet>[1-9]\\d|1\\d{2}|2[0-4]\\d|25[0-5]|\\d)\\.\\g<dec-octet>\\.\\g<dec-octet>\\.\\g<dec-octet>))|::(?:\\h{1,4}:){5}\\g<ls32>|\\h{,4}::(?:\\h{1,4}:){4}\\g<ls32>|(?:(?:\\h{1,4}:)?\\h{1,4})?::(?:\\h{1,4}:){3}\\g<ls32>|(?:(?:\\h{1,4}:){,2}\\h{1,4})?::(?:\\h{1,4}:){2}\\g<ls32>|(?:(?:\\h{1,4}:){,3}\\h{1,4})?::\\h{1,4}:\\g<ls32>|(?:(?:\\h{1,4}:){,4}\\h{1,4})?::\\g<ls32>|(?:(?:\\h{1,4}:){,5}\\h{1,4})?::\\h{1,4}|(?:(?:\\h{1,4}:){,6}\\h{1,4})?::)|(?<IPvFuture>v\\h+\\.[!$&-.0-;=A-Z_a-z~]+))\\])|\\g<IPv4address>|(?<reg-name>(?:%\\h\\h|[!$&-.0-9;=A-Z_a-z~])*))\\z)",
+              "ABS_PATH": "(?-mix:\\A\\/(?:%\\h\\h|[!$&-.0-;=@-Z_a-z~])*(?:\\/(?:%\\h\\h|[!$&-.0-;=@-Z_a-z~])*)*\\z)",
+              "REL_PATH": "(?-mix:\\A(?:%\\h\\h|[!$&-.0-;=@-Z_a-z~])+(?:\\/(?:%\\h\\h|[!$&-.0-;=@-Z_a-z~])*)*\\z)",
+              "QUERY": "(?-mix:\\A(?:%\\h\\h|[!$&-.0-;=@-Z_a-z~\\/?])*\\z)",
+              "FRAGMENT": "(?-mix:\\A(?:%\\h\\h|[!$&-.0-;=@-Z_a-z~\\/?])*\\z)",
+              "OPAQUE": "(?-mix:\\A(?:[^\\/].*)?\\z)",
+              "PORT": "(?-mix:\\A[\\x09\\x0a\\x0c\\x0d ]*\\d*[\\x09\\x0a\\x0c\\x0d ]*\\z)"
+            }
+          }
+        }
+      },
+      "params": {
+        "oauth_token": "118167270-SQfHbPjseENVvaw63qF0gMBHjvOmXQLOakSN1UPG",
+        "oauth_token_secret": "Aj898DdTFcxI1C5O8911k2fnzRHlKtso5jcEHs2KyzXzx",
+        "user_id": "118167270",
+        "screen_name": "zhuliangyu",
+        "x_auth_expires": "0"
+      },
+      "response": {
+        "cache-control": [
+          "no-cache, no-store, must-revalidate, pre-check=0, post-check=0"
+        ],
+        "connection": [
+          "close"
+        ],
+        "content-disposition": [
+          "attachment; filename=json.json"
+        ],
+        "content-length": [
+          "551"
+        ],
+        "content-type": [
+          "application/json;charset=utf-8"
+        ],
+        "date": [
+          "Tue, 15 Nov 2016 22:08:05 GMT"
+        ],
+        "expires": [
+          "Tue, 31 Mar 1981 05:00:00 GMT"
+        ],
+        "last-modified": [
+          "Tue, 15 Nov 2016 22:08:05 GMT"
+        ],
+        "pragma": [
+          "no-cache"
+        ],
+        "server": [
+          "tsa_a"
+        ],
+        "set-cookie": [
+          "lang=en; Path=/",
+          "guest_id=v1%3A147924768516944388; Domain=.twitter.com; Path=/; Expires=Thu, 15-Nov-2018 22:08:05 UTC"
+        ],
+        "status": [
+          "200 OK"
+        ],
+        "strict-transport-security": [
+          "max-age=631138519"
+        ],
+        "x-access-level": [
+          "read-write-directmessages"
+        ],
+        "x-connection-hash": [
+          "0d85f4cb1877575714d17a27e1256ef4"
+        ],
+        "x-content-type-options": [
+          "nosniff"
+        ],
+        "x-frame-options": [
+          "SAMEORIGIN"
+        ],
+        "x-rate-limit-limit": [
+          "75"
+        ],
+        "x-rate-limit-remaining": [
+          "74"
+        ],
+        "x-rate-limit-reset": [
+          "1479248585"
+        ],
+        "x-response-time": [
+          "20"
+        ],
+        "x-transaction": [
+          "005deaee00f4dd73"
+        ],
+        "x-twitter-response-tags": [
+          "BouncerExempt",
+          "BouncerCompliant"
+        ],
+        "x-xss-protection": [
+          "1; mode=block"
+        ]
+      }
+    },
+    "raw_info": {
+      "id": 118167270,
+      "id_str": "118167270",
+      "name": "zhuliangyu",
+      "screen_name": "zhuliangyu",
+      "location": "",
+      "description": "",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 6,
+      "friends_count": 2,
+      "listed_count": 0,
+      "created_at": "Sat Feb 27 20:24:37 +0000 2010",
+      "favourites_count": 0,
+      "utc_offset": -25200,
+      "time_zone": "Mountain Time (US & Canada)",
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 5,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "C0DEED",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://abs.twimg.com/sticky/default_profile_images/default_profile_4_normal.png",
+      "profile_image_url_https": "https://abs.twimg.com/sticky/default_profile_images/default_profile_4_normal.png",
+      "profile_link_color": "1DA1F2",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": true,
+      "default_profile_image": true,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "translator_type": "none"
+    }
+  }
+}
